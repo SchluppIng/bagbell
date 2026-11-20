@@ -1,0 +1,50 @@
+/* BagBell legal pages. No external fonts, scripts or trackers (privacy by design). */
+:root {
+  --bg: #FBF6EC;
+  --card: #FFFFFF;
+  --text: #12304A;
+  --muted: #4A6278;
+  --accent: #0A8F94;
+  --line: #E6DCC8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0E1B26;
+    --card: #152634;
+    --text: #EAF2F5;
+    --muted: #A9BCC8;
+    --accent: #3CC9C3;
+    --line: #23394A;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 56px; height: 56px; }
+header .name { font-size: 26px; font-weight: 700; }
+header .slogan { color: var(--accent); font-size: 14px; }
+h1 { font-size: 28px; line-height: 1.25; margin: 28px 0 4px; }
+h2 { font-size: 20px; margin: 28px 0 6px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+nav.lang { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+nav.lang a {
+  padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
+  text-decoration: none; background: var(--card); font-size: 14px;
+}
+section.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+  padding: 8px 20px 20px; margin: 20px 0;
+}
+.placeholder { background: #FFE9A8; color: #12304A; padding: 0 4px; border-radius: 4px; }
+footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
+footer a { margin-right: 16px; }
